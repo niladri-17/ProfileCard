@@ -15,6 +15,7 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <link rel="icon" href="./assets/favicon.png"/>
     <link rel="stylesheet" href="styles.css" />
     <title>Niladri Basak</title>
   </head>
@@ -25,7 +26,7 @@
         <span><i class="ri-arrow-left-line"></i></span>
         <span>
           <i onclick="toggleSwitch()" class="ri-heart-line" id="likebutton"></i>
-          <img src="sun.png" alt="Dark Mode" id="mode_icon" draggable="false" />
+          <img src="./assets/sun.png" alt="Dark Mode" id="mode_icon" draggable="false" />
           <i class="ri-more-2-fill"></i>
         </span>
       </div>
@@ -75,8 +76,8 @@
       mode_icon.onclick = function () {
         document.body.classList.toggle("light-theme");
         if (document.body.classList.contains("light-theme"))
-          mode_icon.src = "moon.png";
-        else mode_icon.src = "sun.png";
+          mode_icon.src = "./assets/moon.png";
+        else mode_icon.src = "./assets/sun.png";
       };
     </script>
   </body>
