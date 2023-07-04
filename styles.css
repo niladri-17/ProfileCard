@@ -98,20 +98,25 @@ body {
   margin: auto;
   font-size: 0.9rem;
   color: var(--white);
-  margin-bottom: 1rem;
+  margin-bottom: 2rem;
 }
 
 button {
-  padding: 0.75rem 2.5rem;
+  padding: 0.5rem 2rem;
   margin-bottom: 2rem;
   outline: none;
   border: none;
   border-radius: 2rem;
-  font-size: 1rem;  
+  font-size: 0.8rem;  
+  font-weight: 500;
   background-image: linear-gradient(to right, #7d62d4, #eb54ac);
   color: white;
   box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.3);
   cursor: pointer;
+}
+
+button:hover{
+  transform: scale(1.15);
 }
 
 .social__icons {
@@ -150,7 +155,7 @@ button {
 }
 
 .icon__card:nth-child(3) .icon {
-  background-image: linear-gradient(to right, #634eed, #6099fb);
+  background-image: linear-gradient(to right, #d7a210, #f1096e);
 }
 
 .icon i {

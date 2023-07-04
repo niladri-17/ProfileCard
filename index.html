@@ -8,6 +8,13 @@
       href="https://cdn.jsdelivr.net/npm/remixicon@3.2.0/fonts/remixicon.css "
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <link rel="stylesheet" href="styles.css" />
     <title>Niladri Basak</title>
   </head>
@@ -17,7 +24,7 @@
       <div class="header">
         <span><i class="ri-arrow-left-line"></i></span>
         <span>
-          <i onclick="myFunction(this)" class="ri-heart-fill"></i>
+          <i onclick="toggleSwitch()" class="ri-heart-line" id="likebutton"></i>
           <img src="sun.png" alt="Dark Mode" id="mode_icon" draggable="false" />
           <i class="ri-more-2-fill"></i>
         </span>
@@ -26,7 +33,7 @@
       <h1 class="name">Niladri Basak</h1>
       <p class="designation">WEB DEVELOPER</p>
       <p class="about">Create modern websites</p>
-      <button>Email Me</button>
+      <a href="mailto:niladri.bn@gmail.com" ><button>CONTACT ME</button></a>
       <div class="social__icons">
         <div class="icon__card">
           <a href="https://github.com/niladri-17">
@@ -43,9 +50,9 @@
           </a>
         </div>
         <div class="icon__card">
-          <a href="">
+          <a href="https://www.instagram.com/niladri_17_/">
             <div class="icon">
-              <i class="ri-pinterest-line"></i>
+              <i class="ri-instagram-line"></i>
             </div>
           </a>
         </div>
@@ -53,8 +60,15 @@
     </div>
 
     <script>
-      function myFunction(x) {
-        x.classList.toggle("ri-heart-line");
+      // function myFunction(x) {
+      //   x.classList.toggle("ri-github-fill");
+      // --> not working!? }
+      var likebutton = document.getElementById("likebutton");
+      function toggleSwitch() {
+        if (likebutton.classList.contains("ri-heart-line"))
+          likebutton.classList = "ri-heart-fill";
+        else 
+         likebutton.classList = "ri-heart-line";
       }
 
       var mode_icon = document.getElementById("mode_icon");
